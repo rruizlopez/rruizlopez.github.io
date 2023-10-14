@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../css/styleEdit.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit | FunkoShop</title>
+  </head>
+
+  <body>
+    <header>
+      <!-----------INICIO HEADER -------->
+      <nav class="navbar container">
+        <picture class="navbar-logo">
+          <a href="index.html">
+            <img
+              src="../admin/proyecto-edit/img/branding/isotype.svg"
+              alt="isologotipo de la marca funkoshop"
+            />
+          </a>
+        </picture>
+        <ul class="navbar-menu">
+          <li class="navbar-item width-submenu">
+            <a class="navbar-link width-icon" href="/shop/shop.html"
+              >VER TIENDA
+              <iconify-icon icon="tabler:chevron-down"></iconify-icon>
+            </a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Funkos</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Remeras</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Llaveros</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="/pages-views/admin/login.html">ADMIN </a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="/pages-views/admin/contacto.html">SALIR </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-----------FIN HEADER -------->
+    <main>
+      <section class="container">
+        <!-----------COMIENZO -------->
+        <article class="box">
+          <h1>EDITAR ITEM</h1>
+        </article>
+
+        <article class="box">
+          <form class="form" for action="" required>
+            <label class="select" for="categorias">Categoria</label>
+            <select class="input" id="categorias" name="categorias">
+              <option value="figure">Figuras</option>
+              <option value="Figure">Figura 2</option>
+              <option value="figure">Figura 3</option>
+              <option value="figure">Figura 4</option>
+            </select>
+
+            <label class="select" for="licencias">Licencia</label>
+            <select class="input" id="licencias" name="licencias">
+              <option value="licencia">Naruto Shippuden</option>
+              <option value="licencia">Naruto Shippuden2</option>
+              <option value="licencia">Naruto Shippuden3</option>
+              <option value="licencia">Naruto Shippuden4</option>
+            </select>
+          </form>
+        </article>
+
+        <article class="box">
+          <form action="" required>
+            <h2>Nombre del Producto:</h2>
+            <input class="producto border" type="text" />
+          </form>
+        </article>
+
+        <article class="box">
+          <label for="textarea">
+            <textarea class="text-area" name="descripcion" rows="20" cols="90"> </textarea>
+          </label>
+        </article>
+
+        <article class="box">
+          <form>
+            <label class="select" for="sku">SKU</label>
+            <input class="producto border2" type="text" id="sku" />
+
+            <label class="select space" for="price">Precio $</label>
+            <input class="producto border2" type="text" id="price" />
+
+            <label class="select space" for="stock">Stock</label>
+            <input class="producto border3" type="number" id="stock" />
+          </form>
+        </article>
+        <article class="box">
+          <form class="form" action="">
+            <label class="select" for="number">Descuento</label>
+            <input class="border3" type="number" id="number" />
+            <p>%</p>
+
+            <label class="select producto" for="cuotas">Cuotas</label>
+            <select id="cuotas" class="input" name="cuotas">
+              <option value="figure">1 cuota sin interés</option>
+              <option value="Figure">2 cuotas sin interés</option>
+              <option value="figure">3 cuotas sin interés</option>
+              <option value="figure">6 cuotas sin interés</option>
+            </select>
+          </form>
+        </article>
+        <article class="box">
+          <div class="drag-area ">
+            <h2>Imágenes:</h2>
+            <button class="btn1" >Elegir Archivos</button>
+            <p class="text">No se ha seleccionado ningún archivo</p>
+            <input type="file" name="" id="input-file" hidden multiple />
+          </div>
+          <div id="preview"></div>
+        </article>
+
+        <article class="box btn2">
+          <a class="modificar-link" href="">Modificar Producto</a>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <!-----------INICIO FOOTER -------->
+      <section>
+        <nav class="navbar container">
+          <ul class="navbar-item">
+            <li class="navbar-item">
+              <a class="navbar-link" href="">SHOP</a>
+            </li>
+            <li>
+              <a class="navbar-link" href="/pages-views/admin/register.html"> REGISTRARSE</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="">LOGIN</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="">CONTACTO</a>
+            </li>
+          </ul>
+          <picture>
+            <img src="../admin/proyecto-edit/img/branding/isotype.svg" alt="isologotipo" />
+          </picture>
+        </nav>
+        <p class="footer-copy">All rights reserved 2023 - Funkoshop &copy;</p>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  </body>
+</html>
