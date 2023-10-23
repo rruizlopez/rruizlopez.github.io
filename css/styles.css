@@ -527,6 +527,50 @@ button {
 }
 
 
+/*----PAGES-ADMIN-ADMIN---*/
+
+.search-section, .list-section, .add-section{
+    margin: var(--spacing-28) 0;
+    display: flex;
+    justify-content: start;
+    gap: var(--spacing-12);
+    align-items: center;
+}
+
+.list-section{
+    justify-content: space-between;
+}
+
+.icon-size{
+    width: 20px;
+}
+
+.plus-box{
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*--TABLE STYLES--*/
+
+th{
+    font-family: var(--base-font);
+    font-weight: 700;
+    font-size: var(--font-small);
+    padding: var(--spacing-12);
+}
+
+td{
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: var(--font-small);
+    padding: var(--spacing-12);
+}
+
+
+
 
 /*MEDIAS QUERIES*/
 
@@ -656,3 +700,4 @@ button {
 
 
 }
+
