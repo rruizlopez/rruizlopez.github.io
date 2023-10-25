@@ -1,5 +1,7 @@
+/*EXTERNALS*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
-
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
 
 :root {
 
@@ -283,10 +285,13 @@ aside{
 
 /*SLIDER*/
 
+
+
 .slider{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
 }
 
 .slider__title{
@@ -295,10 +300,29 @@ aside{
     text-transform: uppercase;
 }
 
+/* 
+no van estos estilos en el slider
 .slider__items{
     display: flex;
-    gap: var(--spacing-12);
+    gap: var(--spacing-24);
+} 
+*/
+
+iconify-icon{
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
 }
+
+.arrow--left{
+    left: 0em!important;
+    
+    }
+    
+.arrow--right{
+        right: 0em!important;
+        /*background: rgb(255, 255, 0)!important;*/
+    }
 
 .card-item__cover{
     display: flex;
@@ -527,52 +551,8 @@ button {
 }
 
 
-/*----PAGES-ADMIN-ADMIN---*/
 
-.search-section, .list-section, .add-section{
-    margin: var(--spacing-28) 0;
-    display: flex;
-    justify-content: start;
-    gap: var(--spacing-12);
-    align-items: center;
-}
-
-.list-section{
-    justify-content: space-between;
-}
-
-.icon-size{
-    width: 20px;
-}
-
-.plus-box{
-    background-color: var(--primary-solid);
-    color: var(--light-font-solid);
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/*--TABLE STYLES--*/
-
-th{
-    font-family: var(--base-font);
-    font-weight: 700;
-    font-size: var(--font-small);
-    padding: var(--spacing-12);
-}
-
-td{
-    font-family: var(--base-font);
-    font-weight: 500;
-    font-size: var(--font-small);
-    padding: var(--spacing-12);
-}
-
-
-
-
-/*MEDIAS QUERIES*/
+/*--MEDIAS QUERIES--*/
 
 @media screen and (max-width: 768px){
     .navbar__menu{
@@ -700,4 +680,3 @@ td{
 
 
 }
-
