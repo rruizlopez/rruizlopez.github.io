@@ -47,6 +47,8 @@
     --spacing-16:1.6rem;
     --spacing-12:1.2rem;
     --spacing-8:0.8rem;
+    --spacing-5:0.5rem;
+    --spacing-2:0.2rem;
 
 }
 
@@ -360,22 +362,79 @@ header{
 
 }
 /* Shop Cart*/
+.underline{
+    text-decoration: underline;
+    text-decoration-color:var(--primary-solid) ;
+}
 .deatils_cart{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;
+    border: 1px solid var( --dark-300);
+    padding: var(--spacing-8);
+    border-radius: var(--spacing-8);
+}
+.cantidad{
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-2);
+    align-items: center;
+}
+.cantidad div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+.cantidad div span{
+    background-color: var(--primary-900);
+    padding: var(--spacing-2);
+    color: white;
+    text-align: center;
+    width: var(--spacing-12);
 }
 .summary{
     margin-left: auto;
-    width: min-content;
+    max-width: 500px ;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-between;
-    border: 1px solid red;
     justify-content: center;
+    align-items: end;
     gap:10px;   
+}
+.summary h2{
+    margin-left: auto;
+}
+.resumen{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+    -webkit-box-shadow: 0 0 9.5px 3.5px #dddddd;
+    -moz-box-shadow: 0 0 9.5px 3.5px #dddddd;
+    box-shadow: 0 0 9.5px 3.5px #dddddd;
+    border-radius: var(--spacing-8);
+    padding: var(--spacing-8);
+    width: 100%;
+}
+.resumen span{
+    font-size: var(--font-small);
+}
+.resumen .total{
+    border-top: 2px solid var(--primary-solid);
+    margin-top: var(--spacing-12);
+}
+.resumen .total h4{
+    font-size: var(--font-medium);
+}
+.summary button{
+    width: 100%;
+    border-radius: var(--spacing-2);
+    padding: var(--spacing-5);
+    font-size: var(--font-medium);
+    background-color: var(--primary-solid);
+    color: white;
 }
 .section_cart{
     display: flex;
