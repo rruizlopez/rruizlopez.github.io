@@ -297,10 +297,21 @@ aside{
     text-transform: uppercase;
 }
 
-.slider__items{
-    display: flex;
-    gap: var(--spacing-12);
+iconify-icon{
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
 }
+
+.arrow--left{
+    left: 0em!important;
+}
+
+.arrow--right{
+    right: 0em!important;
+    /*background: rgb(255, 255, 0)!important;*/
+}
+
 
 .card-item__cover{
     display: flex;
