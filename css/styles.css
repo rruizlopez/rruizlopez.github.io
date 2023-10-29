@@ -767,6 +767,21 @@ td{
         margin-top: var(--spacing-24);
     }
 
+    .form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container__padre{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .text-area{
+        margin: auto 40px;
+    }
+
 
 
 }
