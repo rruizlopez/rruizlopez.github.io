@@ -714,14 +714,11 @@ td{
         width: 10vw;
     }
 
-
-        
-    
-
-    .slider__items{
-        display:grid;
-        grid-template-columns: repeat(3, 30%);
+    .card-item{
+        display: flex;
+        justify-content: center;
     }
+
 
     .card-item__name{
         font-size: var(--font-small);
@@ -730,13 +727,6 @@ td{
 
     .card-item__cover img{
         width: 30vw;
-    }
-
-    .card-item__tag{
-        padding: var(--spacing-8);
-        position: absolute;
-        right: -20px;
-
     }
 
     .footer{
