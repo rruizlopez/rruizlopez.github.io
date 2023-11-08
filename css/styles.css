@@ -301,10 +301,24 @@ aside {
     text-transform: uppercase;
 }
 
-.slider__items{
-    display: flex;
-    gap: var(--spacing-12);
+iconify-icon{
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
 }
+
+.arrow--left{
+    left: 0em!important;
+    
+    }
+    
+.arrow--right{
+        right: 0em!important;
+        /*background: rgb(255, 255, 0)!important;*/
+    }
+
+
+
 
 
 .card-item__cover {
@@ -506,7 +520,7 @@ button {
 }
 
 
-/*ADMIN*/
+/*ADMIN-Admin*/
 
 .filter-content {
     padding: var(--spacing-20);
@@ -557,7 +571,47 @@ button {
 
 }
 
+/*Item*/
+.section-flex 
+{
+    display:flex;
+    align-items:center;
+}
 
+.cuerpo 
+
+{ 
+    height: 500px; 
+    width: 500px;
+   
+}
+.div-container{
+    display: flex;
+    gap:40px;
+    justify-content:start;
+    align-items: center;
+}
+
+.div-container div:nth-child(1){
+    display: flex;
+    gap:5px;
+    justify-content: start;
+    align-items: center;
+}
+
+.input1{
+    display: inline-block;
+    text-align: center;
+    height: 35px;
+}
+
+.sumar-restar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
 
 /*MEDIAS QUERIES*/
 
