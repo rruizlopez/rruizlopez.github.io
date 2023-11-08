@@ -536,21 +536,52 @@ button {
     font-size: var(--font-medium);
 
 }
-.item-flex 
+.section-flex 
 {
-    display: inline-flex
-}
-.fotomain
-{
- height: 500px; 
- width: 500px;
+    display:flex;
+    align-items:center;
 }
 
 .cuerpo 
+
 { 
     height: 500px; 
     width: 500px;
-    background-color: #FF3333;
+   
+}
+.div-container{
+    display: flex;
+    gap:40px;
+    justify-content:start;
+    align-items: center;
+}
+
+.div-container div:nth-child(1){
+    display: flex;
+    gap:5px;
+    justify-content: start;
+    align-items: center;
+}
+
+.input1{
+    display: inline-block;
+    text-align: center;
+    height: 35px;
+}
+
+.sumar-restar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+span{
+    display: inline-block;
+    width: 15px;
+    border: 1px solid black;
+    text-align: center;
 }
 
 
