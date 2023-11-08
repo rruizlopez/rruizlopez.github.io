@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CREATE | Funkoshop</title>
+    <title>LOGIN | Funkoshop</title>
     <link rel="stylesheet" href="../../css/styles.css">
 
     <!--Google fonts-->
@@ -54,9 +54,35 @@
                 </nav>
             </aside>
         </nav>
-    </header><!--Fin Header-->
-
-
+    </header>
+    <!--Fin Header-->
+        
+    <!--logueo-->
+    <main class="container">
+        <section class="login">
+            <h2 class="slider__title top-title">Ingresar a mi cuenta</h2>
+            <form action="" method="post" class="formularioAjustes1">
+                <div class="alinearElementosCaja"> 
+                    <label class="font-1">Email: </label>
+                    <input type="email" name="email" id="email" class="inputsStyleRed left-float" placeholder="jhondoe@correo.com">
+                </div>
+                <div class="alinearElementosCaja">
+                    <label class="font-1">Contraseña: </label>
+                    <input type="password" name="pass" id="pass" class="inputsStyleRed left-float" placeholder="********">
+                </div>
+                <div class="caja7">
+                    <input type="submit" value="Ingresar" class="btnForm">
+                    <label  class="font-size-R"><input type="checkbox" name="opcion" value="recordarme">&nbsp;Recordarme</label>
+                </div>
+                <div class="alinearElementosCajaCenter">
+                    <p>
+                        <a href="" class="font-3">Olvidé mi contraseña</a> 
+                    </p>
+                </div>
+            </form>
+        </section>
+    </main>  
+    <!--Pie de página-->
     <footer class="footer">
         <nav class="navbar container">
             <ul class="navbar__item">
@@ -68,14 +94,13 @@
             <picture class="navbar__logo">
                 <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
             </picture>
-
         </nav>
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-</footer>
+    </footer>
 
     
-     <!--Iconos-->
-     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <!--Iconos-->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 
-     <script src="../../js/menu-mobile.js"></script>
+    <script src="../../js/menu-mobile.js"></script>
 </body>
