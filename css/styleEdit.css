@@ -229,3 +229,28 @@ h2 {
     text-align: center;
 
 }
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px){
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .container__padre{
+        margin: 0 50px;
+    }
+    .text-area{
+        margin: 0 50px;
+    }
+    .container__padre{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modificar-link{
+        margin-bottom: var(--spacing-24);
+    }
+
+}

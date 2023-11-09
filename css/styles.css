@@ -616,16 +616,12 @@ td{
 
 
 /*Item*/
-.section-flex 
-{
+.section-flex {
     display:flex;
     align-items:center;
+    justify-content:center;
 }
 
-.cuerpo { 
-    height: 500px; 
-    width: 500px;
-}
 
 .div-container{
     display: flex;
@@ -851,15 +847,11 @@ td{
         width: 10vw;
     }
 
-
-        
-    
-
-    .slider__items{
-        display:grid;
-        grid-template-columns: repeat(3, 30%);
+    .card-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
 
     .card-item__name {
         font-size: var(--font-small);
@@ -906,6 +898,19 @@ td{
         grid-template-columns: repeat(2, 50%);
         margin-top: var(--spacing-24);
     }
+
+    .section-flex {
+        flex-direction: column;
+    }
+
+    .imagen-item{
+        width: 50vw;
+    }
+
+    .cuerpo{
+        margin: 0 var(--spacing-68);
+    }
+    
 
 
 
